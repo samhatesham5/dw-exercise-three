@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 //And lastly, importing Home
 import Home from './pages/Home';
+import {WEATHER_APP_API_KEY} from "./API_KEYS.js"; 
+
 
 //Creating our path to the main page 
 const router = createBrowserRouter([
@@ -25,6 +27,7 @@ function App() {
     <div className="App">
       {/* Where React Router comes into play*/}
       <RouterProvider router={router} />
+      <p></p>
     </div>
   );
 }
