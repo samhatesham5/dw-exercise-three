@@ -2,12 +2,12 @@ import React from "react";
 
 function Header() {
     return (
-        <header>
+        <div className="navBar">
             <a href="/?city=New York City">NYC</a>
+            <a href="/?city=Atlanta">Atlanta</a>
             <a href="/?city=Orlando">Orlando</a>
             <a href="/?city=Seoul">Seoul</a>
-            <a href="/?city=Atlanta">Atlanta</a>
-        </header>
+        </div>
     );
 
 

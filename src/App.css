@@ -1,13 +1,102 @@
 /*Defaults for the whole page*/
 
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Inter Tight', 'sans-serif';
   margin: 0;
+}
+
+body {
+  background-color: #DFF3FF;
+}
+
+/*
+
+---STYLING HEADER---
+
+*/
+
+.navBar {
+  display: flex; 
+  font-size: 32px;
+  font-weight: 700;
+  justify-content: space-around;
+  margin: 50px; 
+  
+}
+
+a:visited, a {
+  color: black; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FA957E; 
+
 }
 
 /* 
 
----STYLING HEADER----
+---STYLING CARD----
 
 */
+
+.weatherCard {
+  background-color: #F8EFEB;
+  border: solid black; 
+  margin: 0px 120px; 
+  padding: 120px;
+}
+
+.row {
+  padding-bottom: 30px; 
+}
+
+.currentWeather {
+  display:flex;
+  justify-content: center;
+  
+}
+
+.currentWeather > p {
+  font-size: 96px; 
+  font-weight: 700;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.subHalf {
+  font-weight: 400;
+}
+
+.cityName {
+  color: #FA957E; 
+  font-weight: 700; 
+  padding-left: 5px; 
+}
+
+.otherValues {
+  display: flex; 
+  justify-content: space-around;
+}
+
+/* 
+
+---Footer---
+
+*/
+
+footer {
+  display:flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 16px; 
+  font-weight: 400; 
+  margin: 40px; 
+}
 
