@@ -44,7 +44,7 @@ a:hover {
 */
 
 .weatherCard {
-  background-color: #F8EFEB;
+  background-color: #fee5cf;
   border: solid black; 
   margin: 0px 120px; 
   padding: 120px;
@@ -61,12 +61,13 @@ a:hover {
 }
 
 .currentWeather > p {
-  font-size: 96px; 
+  font-size: 86px; 
   font-weight: 700;
 }
 
 .subHeader {
   display: flex;
+  font-size: 18px; 
   justify-content: center;
 }
 
@@ -80,10 +81,15 @@ a:hover {
   padding-left: 5px; 
 }
 
-.otherValues {
-  display: flex; 
-  justify-content: space-around;
+.row1, .row2 {
+  display: flex;
+  justify-content: center;
 }
+
+.row1 > p, .row2 > p {
+  padding: 0px 15px;
+}
+
 
 /* 
 
@@ -99,4 +105,3 @@ footer {
   font-weight: 400; 
   margin: 40px; 
 }
-

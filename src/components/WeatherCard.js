@@ -37,11 +37,15 @@ function WeatherCard({
             <h2 className="cityName">{cityName}</h2>
         </div>
         <div className="row otherValues">
-            <p>High: {tempMax}&deg;</p>
-            <p>Low: {tempMin}&deg;</p>
-            <p>Cloudiness: {cloudiness}%</p>
-            <p>Humidity: {humidity}%</p>
-            <p>Wind Speed: {windspeed}mph</p>
+            <div className="row row1">
+                <p>High: {tempMax}&deg;</p>
+                <p>Low: {tempMin}&deg;</p>
+            </div>
+            <div className="row2"> 
+                <p>Cloudiness: {cloudiness}%</p>
+                <p>Humidity: {humidity}%</p>
+                <p>Wind Speed: {windspeed}mph</p>
+            </div>
         </div>
     </div>
 

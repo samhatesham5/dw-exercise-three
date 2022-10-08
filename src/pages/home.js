@@ -3,7 +3,7 @@ import {WEATHER_APP_API_KEY} from "../API_KEYS";
 import axios from "axios";
 import WeatherCard from "../components/WeatherCard.js";
 import { useSearchParams} from "react-router-dom";
-import Header from "../components/Header.js"
+import Header from "../components/Header.js";
 
 //Quering Orlando with Fahranheit temps
 
