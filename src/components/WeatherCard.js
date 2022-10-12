@@ -26,7 +26,17 @@ function WeatherCard({
     else if (cloudiness > 5) {
         introSen = "There are"
     };
-    return (
+    
+    {/*Changing background color*/}
+
+    if (currentTemp < 60) {
+        document.body.style.backgroundColor = "#534C4B";
+    }
+    else {
+        document.body.style.backgroundColor = "#DFF3FF";
+    }
+
+    return ( 
     <div className="weatherCard">
         <div className="row currentWeather">
             <p>{currentTemp}&deg;</p>
@@ -34,7 +44,7 @@ function WeatherCard({
         </div>
         <div className="row subHeader">
             <h2 className="subHalf">{introSen} {lowerType} in </h2>
-            <h2 className="cityName">{cityName}</h2>
+            <h2  className="cityName">{cityName}</h2>
         </div>
         <div className="row otherValues">
             <div className="row row1">
@@ -48,7 +58,6 @@ function WeatherCard({
             </div>
         </div>
     </div>
-
     );
 
 }

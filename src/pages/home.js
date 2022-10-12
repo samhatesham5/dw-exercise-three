@@ -4,6 +4,7 @@ import axios from "axios";
 import WeatherCard from "../components/WeatherCard.js";
 import { useSearchParams} from "react-router-dom";
 import Header from "../components/Header.js";
+//import { RenderErrorBoundary } from "react-router/dist/lib/hooks";
 
 //Quering Orlando with Fahranheit temps
 
