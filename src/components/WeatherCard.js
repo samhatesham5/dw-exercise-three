@@ -29,19 +29,6 @@ function WeatherCard({
         introSen = "There is";
     };
 
-    {/*}
-    switch(weatherType){
-        case "Clouds":
-            introSen = "There are";
-        case "Thunderstorm":
-            introSen = "There is a";
-        case "Clear":
-            introSen = "It's";
-        default:
-            introSen = "There is";
-    };
-*/}
-
     {/*Changing background color based on temperature*/}
 
     if (currentTemp <= 60) {
