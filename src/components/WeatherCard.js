@@ -23,6 +23,9 @@ function WeatherCard({
         introSen = "There is"
 
     }
+    else if (weatherType === "Thunderstorm") {
+        introSen = "There is a"
+    }
     else if (cloudiness > 5) {
         introSen = "There are"
     };
