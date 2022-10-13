@@ -15,6 +15,7 @@ function WeatherIcon({weatherType}) {
         case "Clouds":
             return <FontAwesomeIcon icon={faCloud} />;
         case "Rain":
+        case "Drizzle":
             return <FontAwesomeIcon icon={faUmbrella} />;
         case "Snow":
             return <FontAwesomeIcon icon={faSnowflake} />;
