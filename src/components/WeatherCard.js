@@ -1,4 +1,5 @@
 import React from "react"; 
+import WeatherIcon from "./WeatherIcon.js"; 
 
 function WeatherCard({
     humidity, 
@@ -8,32 +9,43 @@ function WeatherCard({
     tempMax, 
     tempMin, 
     currentTemp, 
-    weatherType,
-    weatherIcon, 
+    weatherType, 
     }){
     
     {/*Setting weathertype to lowercase*/}
     const lowerType = weatherType && weatherType.toLowerCase(); 
 
     {/*Changing the syntax of the sentence based on conditions*/}
-    let introSen = "It's";
+    let introSen = "";
 
     {/*Some special cases where "There are" doesn't make sense*/}
-    if (weatherType === "Snow" || weatherType === "Drizzle" || weatherType === "Rain" || weatherType === "Mist") {
-        introSen = "There is"
-
-    }
-    else if (weatherType === "Thunderstorm") {
-        introSen = "There is a"
-    }
-    else if (cloudiness > 5) {
-        introSen = "There are"
+    if (weatherType === "Clouds")
+        introSen = "There are";
+    else if(weatherType=== "Thunderstorm")
+        introSen = "There is a";
+    else if (weatherType === "Clear")
+        introSen = "It's";
+    else {
+        introSen = "There is";
     };
-    
-    {/*Changing background color*/}
 
-    if (currentTemp < 60) {
-        document.body.style.backgroundColor = "#534C4B";
+    {/*}
+    switch(weatherType){
+        case "Clouds":
+            introSen = "There are";
+        case "Thunderstorm":
+            introSen = "There is a";
+        case "Clear":
+            introSen = "It's";
+        default:
+            introSen = "There is";
+    };
+*/}
+
+    {/*Changing background color based on temperature*/}
+
+    if (currentTemp <= 60) {
+        document.body.style.backgroundColor = `#534C4B`;
     }
     else {
         document.body.style.backgroundColor = "#DFF3FF";
@@ -43,7 +55,7 @@ function WeatherCard({
     <div className="weatherCard">
         <div className="row currentWeather">
             <p>{currentTemp}&deg;</p>
-            <img src= {`http://openweathermap.org/img/wn/${weatherIcon}@2x.png`} alt="image of weather"/>
+            <WeatherIcon weatherType = {weatherType}/> 
         </div>
         <div className="row subHeader">
             <h2 className="subHalf">{introSen} {lowerType} in </h2>

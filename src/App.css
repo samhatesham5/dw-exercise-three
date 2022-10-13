@@ -40,7 +40,7 @@ a:hover {
 */
 
 .weatherCard {
-  background-color: #fee5cf;
+  background-color: #FBE7D6;
   border: solid black; 
   margin: 0px 120px; 
   padding: 120px;
@@ -59,6 +59,12 @@ a:hover {
 .currentWeather > p {
   font-size: 86px; 
   font-weight: 700;
+}
+
+.currentWeather > svg {
+  height: auto;
+  width: 50px; 
+  padding: 10px; 
 }
 
 .subHeader {
@@ -87,6 +93,7 @@ a:hover {
 }
 
 
+
 /* 
 
 ---Footer---
@@ -100,4 +107,5 @@ footer {
   font-size: 16px; 
   font-weight: 400; 
   margin: 40px; 
+  color: #FA957E;
 }

@@ -43,8 +43,7 @@ const {
     tempMin, 
     cityName, 
     currentTemp,
-    weatherType, 
-    weatherIcon, 
+    weatherType,  
     } = useMemo(()=> {
     //Set weatherMain to the value of weather main OR make it an empty object
     const weatherMain = weatherData.main || {};
@@ -58,7 +57,6 @@ const {
         tempMin: Math.round(weatherMain.temp_min),
         currentTemp: Math.round(weatherMain.temp),
         windspeed: weatherData.wind && weatherData.wind.speed,
-        weatherIcon: weatherData.weather && weatherData.weather[0].icon,
     };
 }, [weatherData]);
 
@@ -77,9 +75,8 @@ return (
         tempMin = {tempMin}
         currentTemp = {currentTemp}
         weatherType = {weatherType}
-        weatherIcon = {weatherIcon}
         />
-        <footer>
+         <footer>
             <p>Sam Whitley - Dynamic Web - 2022</p>
         </footer>
     </div>
