@@ -1,14 +1,14 @@
 import React, {useEffect, useMemo, useState} from "react";
 import {WEATHER_APP_API_KEY} from "../API_KEYS";
 import axios from "axios";
-import WeatherCard from "../components/weatherCard.js";
+import WeatherCard from "../components/WeatherCards.js";
 import { useSearchParams} from "react-router-dom";
 import Header from "../components/Header.js";
 //import { RenderErrorBoundary } from "react-router/dist/lib/hooks";
 
 //Quering Orlando with Fahranheit temps
 
-function Home() {
+function Homes() {
     //Value stored in weatherData(as the default) is an empty object
     const [weatherData, setWeatherData] = useState({});
     //Value stored in city (as the default) is a string "orlando"
@@ -84,4 +84,4 @@ return (
     );
 }
 
-export default Home; 
+export default Homes; 

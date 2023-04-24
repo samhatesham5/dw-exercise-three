@@ -1,7 +1,7 @@
 import React from "react"; 
 import WeatherIcon from "./WeatherIcon.js"; 
 
-function WeatherCard({
+function WeatherCards({
     humidity, 
     cloudiness, 
     cityName, 
@@ -64,4 +64,4 @@ function WeatherCard({
 
 }
 
-export default WeatherCard; 
+export default WeatherCards; 
