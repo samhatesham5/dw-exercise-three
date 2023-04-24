@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from "react";
 import {WEATHER_APP_API_KEY} from "../API_KEYS";
 import axios from "axios";
-import WeatherCard from "../components/WeatherCard.js";
+import WeatherCard from "../components/weatherCard.js";
 import { useSearchParams} from "react-router-dom";
 import Header from "../components/Header.js";
 //import { RenderErrorBoundary } from "react-router/dist/lib/hooks";
